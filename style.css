@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+}
+
+.col {
+  display: flex;
+}
+
+.col1 {
+  overflow: hidden;
+  height: 100%;
+}
+
+img {
+  height: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.col2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 16px;
+}
+
+.col2 h2 {
+  margin: 0 0 1em;
+}
+
+input {
+  margin: 0.6em 0;
+  padding: 8px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.btn {
+  margin: 1em 0 0;
+}
+
+.bg-image {
+  position: absolute;
+  z-index: -1;
+
+  background-image: url("./hinh.jpg");
+
+  /* add the blur effect */
+  filter: blur(8px);
+
+  width: 100%;
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
